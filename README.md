@@ -60,4 +60,14 @@ wickInstance.cp("http://example.com/file.zip", ".")*
 
 This example will download `file.zip` from example.com, then upload it to google.ca with a PUT request with the same file name and content type.
 
-Copying files is on the roadmap.
+```python
+wickInstance.mv("http://example.com/file.zip", "http://google.ca/")*
+```
+
+```bash
+>>> GET 'http://example.com/file.zip' -> PUT (upload) 'http://google.ca/file.zip' -> DEL 'http://example.com/file.zip'
+```
+
+This will download `'file.zip` from example.com, upload it to google.ca, then send a DEL request to example.com
+
+Copying and moving files is on the roadmap.
