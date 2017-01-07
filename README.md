@@ -49,3 +49,13 @@ http://www.google.ca/setprefdomain?prefdom=US&sig=
 /intl/en/policies/privacy/
 /intl/en/policies/terms/
 ```
+
+```python
+wickInstance.cp("http://example.com/file.zip", ".")*
+```
+
+```bash
+>>> GET 'http://example.com/file.zip' -> PUT (upload) 'http://google.ca/file.zip'
+```
+
+Copying files is on the roadmap.
