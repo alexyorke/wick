@@ -58,4 +58,6 @@ wickInstance.cp("http://example.com/file.zip", ".")*
 >>> GET 'http://example.com/file.zip' -> PUT (upload) 'http://google.ca/file.zip'
 ```
 
+This example will download `file.zip` from example.com, then upload it to google.ca with a PUT request with the same file name and content type.
+
 Copying files is on the roadmap.
