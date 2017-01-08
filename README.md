@@ -71,3 +71,7 @@ wickInstance.mv("http://example.com/file.zip", "http://google.ca/")*
 This will download `'file.zip` from example.com, upload it to google.ca, then send a DEL request to example.com
 
 Copying and moving files is on the roadmap.
+
+## Roadmap
+
+Implement these linux utilities: `find` (would have to recrusively search web dir; would be slow), `cmp`, and support piping output of websites to other linux utilities.
