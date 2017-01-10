@@ -56,7 +56,7 @@ class Wick:
     # copies a local or remote file to the server
     def cp(self, theData):
         if (theData.startswith('http://') or
-        theData.startswith('https://')) and
+        theData.startswith('https://')) and \
         "\n" not in theData:
             theData = requests.get(theData)
 
