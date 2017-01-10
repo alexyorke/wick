@@ -17,7 +17,7 @@ class Wick:
 
     # set the url
     def set(self, url):
-        if not url.startswith("http://") and
+        if not url.startswith("http://") and \
         not url.startswith("https://"):
             url = "http://" + url
         self.url = url
