@@ -1,6 +1,7 @@
 # wick
 Browse the internet like your filesystem.
 
+[![Updates](https://pyup.io/repos/github/Decagon/wick/shield.svg)](https://pyup.io/repos/github/Decagon/wick/) [![Python 3](https://pyup.io/repos/github/Decagon/wick/python-3-shield.svg)](https://pyup.io/repos/github/Decagon/wick/)
 
 ## Usage
 
