@@ -1,4 +1,4 @@
-import urlparse
+import urllib.parse
 import requests
 from requests.auth import HTTPBasicAuth
 
@@ -44,7 +44,7 @@ class Wick:
 
         # select the url in href for all a tags(links)
         for link in dom.xpath('//a/@href'):
-            print link
+            print(link)
 
     def rm(self, theData):
         theUrl = self.url
@@ -67,7 +67,6 @@ class Wick:
         cdLocation = cdLocation.strip()
         if cdLocation == "..":
             url = '/'.join(self.url.split("/")[:-1])
-            print url
         else:
             if "." in cdLocation:
                 url = urlparse.urljoin(self.url + "/", cdLocation)
