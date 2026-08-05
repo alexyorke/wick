@@ -63,15 +63,7 @@ class Wick:
         return requests.put(self.url, data=theData)
 
     def cd(self, cdLocation):
-        url = None
         cdLocation = cdLocation.strip()
-        if cdLocation == "..":
-            url = '/'.join(self.url.split("/")[:-1])
-        else:
-            if "." in cdLocation:
-                url = urlparse.urljoin(self.url + "/", cdLocation)
-            else:
-                url = urlparse.urljoin(self.url, cdLocation)
-
-                self.url = url
+        url = urllib.parse.urljoin(self.url + "/", cdLocation)
+        self.url = url
         return url
